@@ -43,7 +43,6 @@ namespace EmployeeManagementAppMVC.Controllers
                                                     StartDate = e.StartDate,
                                                     Description = e.Description
                                                 }).ToList<EmployeeViewModel>();
-
                 return list;
             }
             catch (Exception e)
