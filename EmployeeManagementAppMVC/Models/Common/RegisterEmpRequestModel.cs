@@ -23,7 +23,8 @@ namespace EmployeeManagementAppMVC.Models.Common
         public string SalaryId { get; set; }
 
         [Required(ErrorMessage = "Required")]
-        [DisplayFormat(ApplyFormatInEditMode = true,DataFormatString ="{0:dd/MMM/yyyy}")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MMM/yyyy}")]
+        [DataType(DataType.Date)]
         public DateTime StartDate { get; set; }
 
         public string Description { get; set; }

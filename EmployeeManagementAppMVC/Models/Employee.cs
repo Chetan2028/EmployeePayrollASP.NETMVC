@@ -27,6 +27,9 @@ namespace EmployeeManagementAppMVC.Models
         [ForeignKey("SalaryId")]
         public Salary Salary { get; set; }
 
+        [Required]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MMM/yyyy}")]
+        [DataType(DataType.Date)]
         public DateTime StartDate { get; set; }
 
         public string Description { get; set; }
