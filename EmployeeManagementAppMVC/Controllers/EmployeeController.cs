@@ -18,7 +18,7 @@ namespace EmployeeManagementAppMVC.Controllers
             return View();
         }
 
-        //UC2 -> Retrieve Data
+        //UC2 & UC3-> Retrieve Data
         public ActionResult EmployeeList()
         {
             List<EmployeeViewModel> list = GetAllEmployee();
@@ -52,7 +52,7 @@ namespace EmployeeManagementAppMVC.Controllers
             }
         }
 
-        //UC4 --> Add Employee to database
+        //UC4 & UC5--> Add Employee to database
         [HttpPost]
         public ActionResult RegisterEmployee(RegisterEmpRequestModel employee)
         {
